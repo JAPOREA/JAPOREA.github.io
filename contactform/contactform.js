@@ -143,6 +143,10 @@ jQuery(document).ready(function ($) {
     // });
 
 
+    $("#sendmessage").addClass("show");
+    $("#errormessage").removeClass("show");
+    $('.contactForm').find("input, textarea").val("");
+
     return false;
   });
 
