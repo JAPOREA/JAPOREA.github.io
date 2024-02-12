@@ -2,19 +2,794 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <title>JAPOREA</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Full-stack Web developer" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.ico" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style-black.css" rel="stylesheet">
+  <link href="css/card.css" rel="stylesheet">
+  <link href="css/flip.css" rel="stylesheet">
+  <link href="css/button.css" rel="stylesheet">
+  <link href="css/lofi.css" rel="stylesheet">
+  <link href="css/lofi2.css" rel="stylesheet">
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
+
 </head>
 
-<body>
+<body id="page-top">
 
-    <iframe src="https://github.com/sponsors/ilias-anouar/card" title="Sponsor ilias-anouar" height="225" width="600"
-        style="border: 0;"></iframe>
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll logoJapo" href="#page-top"><span id="nameRed">JAP</span> <img
+          src="/img/japorea_1.png" alt="logo" width="25px"> <span id="nameBlue">REA</span> </a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link js-scroll" href="#service">Events</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#gallery">Gallery</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link js-scroll" href="#blog">Blog</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image" style="background-image: url(img/gif1.gif)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h1 class="intro-title monospace logoJapo"><span id="nameRed">JAP</span> <img src="/img/japorea_1.png"
+              alt="logo" width="100px"> <span id="nameBlue">REA</span></h1>
+          <p class="display-6 mb-4">
+            club for Asian Culture lovers
+          </p>
+          <p class="intro-subtitle"><span class="text-slider-items">Welcome,مرحباً,환영,いらっしゃいませ</span><strong
+              class="text-slider monospace"></strong></p>
+          <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+
+  <section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="/img/japoBack.png" alt="background-image" class="image-fluid w-100" style="max-width: 100%;">
+              </div>
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      About us
+                    </h5>
+                  </div>
+                  <p class="lead">
+                    LIVE ROOM LAUNCHED IN 2020 THE PROJECT OF CREATION OF JAPOREA CLUB FOR ASIAN CULTURE ACTIVITIES.
+                    JAPOREA HAS OVER 50 MEMBERS AND WE ARE ORGANIZING AN EVENT EVERY MONTH
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-    <iframe src="https://github.com/sponsors/ilias-anouar/button" title="Sponsor ilias-anouar" height="32" width="114"
-        style="border: 0; border-radius: 6px;"></iframe>
+
+  <!-- / section tech stack  start /-->
+  <div class="mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="text-center">
+            <h3>
+              Random anime quotes
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col text-center">
+          <button id="refreshAdvice" class="btn"><i class="ion-ios-refresh-empty"></i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center" id="quoteContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / section tech stack  end /-->
+
+
+  <!-- / section tech stack  start /-->
+  <!-- <div class="paralax-mf" /*style="background-image: url(img/counter-bg1.jpg)" * />
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col text-center">
+        <button class="im-join">
+          <div></div>
+        </button>
+      </div>
+      <div class="col text-center">
+        <button class="im-lofi">
+          <div></div>
+        </button>
+      </div>
+      <div class="col text-center">
+        <button class="im-lofi2">
+          <div></div>
+        </button>
+      </div>
+    </div>
+  </div>
+  </div> -->
+  <!-- / section tech stack  end /-->
+
+
+  <!--/ Section Services Star /-->
+  <!-- <section id="service" class="services-mf sect-pt4 route mb-4">
+    <div class="container ">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="text-center">
+            <h3 class="title-a">
+              Services
+            </h3>
+            <p class="subtitle-a">
+              examine a few of the services I offer
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-middle">
+        <div class="col-md-6 col-lg-4 column">
+          <div class="card gr-1">
+            <div class="txt">
+              <h1>BRANDING AND </br>
+                CORPORATE DESIGN</h1>
+              <p>Visual communication and problem-solving</p>
+            </div>
+            <a href="#">more</a>
+            <div class="ico-card">
+              <i class="fa fa-rebel"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 column">
+          <div class="card gr-2">
+            <div class="txt">
+              <h1>Web Front-End </br>
+                SOLUTIONS</h1>
+              <p>Enhancing the experience of users with responsive website</p>
+            </div>
+            <a href="#">more</a>
+            <div class="ico-card">
+              <i class="fa fa-code"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 column">
+          <div class="card gr-4">
+            <div class="txt">
+              <h1>Web Back-End </br>
+                SOLUTIONS</h1>
+              <p>The data access layer of website or web applications</p>
+            </div>
+            <a href="#">more</a>
+            <div class="ico-card">
+              <i class="fa fa-code"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 column">
+          <div class="card gr-3">
+            <div class="txt">
+              <h1>UX/UI WEBsite </br>AND Design</h1>
+              <p>User Interface and User Experience Design</p>
+            </div>
+            <a href="#">more</a>
+            <div class="ico-card">
+              <i class="fa fa-empire"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 column">
+          <div class="card gr-6">
+            <div class="txt">
+              <h1>Consulting </br>AND Reviewing</h1>
+              <p>Offer advices and expertise for new developers</p>
+            </div>
+            <a href="#">more</a>
+            <div class="ico-card">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 column">
+          <div class="card gr-5">
+            <div class="txt">
+              <h1>Graphic Design <br>AND Photography</h1>
+              <p>Creating visual concepts, using computer software or hand</p>
+            </div>
+            <a href="#">more</a>
+            <div class="ico-card">
+              <i class="fa fa-crop"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!--/ Section Services End /-->
+
+  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/gif4.gif)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-lg-4">
+          <div class="counter-box">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">50</p>
+              <span class="counter-text">EVENTS ORGANIZED</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-4">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">5</p>
+              <span class="counter-text">YEARS OF EXPLORING</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-ios-people"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">200</p>
+              <span class="counter-text">TOTAL MEMBERS</span>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-sm-3 col-lg-4">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">0</p>
+              <span class="counter-text">AWARD WON</span>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <!--/ Section Portfolio Star /-->
+  <section id="gallery" class="portfolio-mf sect-pt4 route mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Events Gallery
+            </h3>
+            <p class="subtitle-a">
+              Some of the events japorea organized
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="workContainer">
+
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-1.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-1.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Movies history website</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Development</span> / <span class="w-date">27 Des. 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="work-box">
+            <div class="work-img">
+              <img src="img/work-2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Conception & modeling</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Web Design</span> / <span class="w-date">23 Des. 2022</span>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <span class="ion-ios-plus-outline details"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-3.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Mavrito Lana Dere</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div> -->
+
+        <!-- <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-4.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-4.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Bindo Laro Cado</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div> -->
+
+        <!-- <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-5.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-5.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Studio Lena Mado</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div> -->
+
+        <!-- <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-6.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-6.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Studio Big Bang</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </section>
+  <!--/ Section Portfolio End /-->
+
+  <!--/ Section Testimonials Star /-->
+  <div class="testimonials paralax-mf bg-image" style="background-image: url(img/gifLofiJoin.gif)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.7982947623314!2d-5.809577864731556!3d35.78033079459624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c7fc81074d717%3A0x8c5e07a9e3d983dd!2sLive%20Room%20Project!5e0!3m2!1sen!2sma!4v1707753969718!5m2!1sen!2sma"
+            height="450" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-6">
+          <div class="more-info">
+            <p class="lead text-light">
+              If you require further information, please pay us a visit.
+            </p>
+            <ul class="list-ico text-light">
+              <li><span class="ion-ios-location"></span>3 Rue El, Rue Jabha al Watania, Tanger 90000</li>
+              <li><span class="ion-ios-telephone"></span>(+212) 603-601730</li>
+              <li><span class="ion-ios-telephone"></span>(+212) 620-693229</li>
+              <li><span class="ion-email"></span>liveroomofficial@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Section Blog Star /-->
+  <!-- <section id="blog" class="blog-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Blog
+            </h3>
+            <p class="subtitle-a">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Travel</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+              <p class="card-description">
+                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                a pellentesque nec,
+                egestas non nisi.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="post-author">
+                <a href="#">
+                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                  <span class="author">Morgan Freeman</span>
+                </a>
+              </div>
+              <div class="post-date">
+                <span class="ion-ios-clock-outline"></span> 10 min
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="blog-single.html"><img src="img/post-2.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Web Design</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+              <p class="card-description">
+                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                a pellentesque nec,
+                egestas non nisi.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="post-author">
+                <a href="#">
+                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                  <span class="author">Morgan Freeman</span>
+                </a>
+              </div>
+              <div class="post-date">
+                <span class="ion-ios-clock-outline"></span> 10 min
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="blog-single.html"><img src="img/post-3.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Web Design</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+              <p class="card-description">
+                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                a pellentesque nec,
+                egestas non nisi.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="post-author">
+                <a href="#">
+                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                  <span class="author">Morgan Freeman</span>
+                </a>
+              </div>
+              <div class="post-date">
+                <span class="ion-ios-clock-outline"></span> 10 min
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!--/ Section Blog End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/gif2.gif)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="contact-mf">
+            <div id="contact" class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Contact us
+                    </h5>
+                  </div>
+                  <div>
+                    <form action="" method="post" role="form" class="contactForm text-center">
+                      <div id="sendmessage">Your message has been sent. Thank you!</div>
+                      <div id="errormessage"></div>
+                      <div class="row">
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                              data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                              data-rule="email" data-msg="Please enter a valid email" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                              data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required"
+                              data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="title-box-2 pt-4 pt-md-0">
+                    <h5 class="title-left">
+                      Get in Touch
+                    </h5>
+                  </div>
+                  <div class="more-info">
+                    <p class="lead">
+                      If you require further information, please leave a message and I will
+                      respond promptly.
+                    </p>
+                    <ul class="list-ico">
+                      <li><span class="ion-ios-location"></span>3 Rue El, Rue Jabha al Watania, Tanger 90000</li>
+                      <li><span class="ion-ios-telephone"></span>(+212) 603-601730</li>
+                      <li><span class="ion-ios-telephone"></span>(+212) 620-693229</li>
+                      <li><span class="ion-email"></span>liveroomofficial@gmail.com</li>
+                    </ul>
+                  </div>
+                  <div class="socials text-center">
+                    <ul>
+                      <li><a href="https://www.instagram.com/japoreaclub/" _blank><span class="ico-circle instagram"><i
+                              class="ion-social-instagram"></i></span></a></li>
+                      <li><a href="https://www.pinterest.com/cjaporea/" _blank><span class="ico-circle pinterest"><i
+                              class="ion-social-pinterest"></i></span></a></li>
+                      <li><a href="https://github.com/JAPOREA" _blank><span class="ico-circle github"><i
+                              class="ion-social-github"></i></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pb-5 text-center">
+        <div class="col mb-2">
+          <a href="https://github.com/sponsors/ilias-anouar" blank class="btn btn-outline-light px-5 py-3"><span
+              class="text-danger"><i class="ion-heart"></i></span> Sponsor
+            me <span><i class="ion-social-github"></i></span></a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">&copy; Copyright <strong>JapoRea</strong>. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+
+  <!-- / modal start / -->
+  <div class="modal fade" id="eventDetails" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="eventTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body p-0" id="eventBody">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / modal end / -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <!-- <script src="lib/lightbox/js/lightbox.min.js"></script> -->
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script src="js/render.js"></script>
 
 </body>
 
