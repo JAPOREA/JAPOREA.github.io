@@ -1,2 +1,3 @@
 # JAPOREA.github.io
-japorea website prototype
+### japorea website prototype :
+### https://japorea.github.io/
