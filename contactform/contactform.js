@@ -90,7 +90,6 @@ jQuery(document).ready(function ($) {
     });
     if (ferror) return false;
     else var str = $(this).serialize();
-    let str1 = 'name=Ilias%20anouar&email=ilyasanouar01%40gmail.com&subject=hey%20this%20is%20a%20test%20can%20u%20check%20it&message=dd'
     let array = str.split('&')
     console.log(array);
     let message = {
@@ -120,28 +119,28 @@ jQuery(document).ready(function ($) {
     });
     console.log(message);
 
-    var settings = {
-      "url": "https://portfolio-221y.onrender.com/api/v1/message/save/",
-      "method": "POST",
-      "timeout": 0,
-      "headers": {
-        "Content-Type": "application/json"
-      },
-      "data": JSON.stringify(message),
-    };
+    // var settings = {
+    //   "url": "https://portfolio-221y.onrender.com/api/v1/message/save/",
+    //   "method": "POST",
+    //   "timeout": 0,
+    //   "headers": {
+    //     "Content-Type": "application/json"
+    //   },
+    //   "data": JSON.stringify(message),
+    // };
 
-    $.ajax(settings).done(function (response) {
-      console.log(response);
-      if (response == "Sended successfully") {
-        $("#sendmessage").addClass("show");
-        $("#errormessage").removeClass("show");
-        $('.contactForm').find("input, textarea").val("");
-      } else {
-        $("#sendmessage").removeClass("show");
-        $("#errormessage").addClass("show");
-        $('#errormessage').html(response);
-      }
-    });
+    // $.ajax(settings).done(function (response) {
+    //   console.log(response);
+    //   if (response == "Sended successfully") {
+    //     $("#sendmessage").addClass("show");
+    //     $("#errormessage").removeClass("show");
+    //     $('.contactForm').find("input, textarea").val("");
+    //   } else {
+    //     $("#sendmessage").removeClass("show");
+    //     $("#errormessage").addClass("show");
+    //     $('#errormessage').html(response);
+    //   }
+    // });
 
 
     return false;
