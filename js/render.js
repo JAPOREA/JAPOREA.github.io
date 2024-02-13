@@ -7,37 +7,26 @@ fetch('../gallery/events.json')
   .then(d => {
     let cols = ''
     d.forEach(event => {
-      cols += `<div class="col-md-4 d-flex justify-content-center p-0">
+      cols += `<div class="col-md-4 d-flex justify-content-center p-1">
           <div class="flip-card w-100">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src="img/${event.cover}" alt="Avatar" style="width:100%;height:300px;">
             </div>
             <div class="flip-card-back">
-              <h1>${event.name}</h1>
+              <h3>${event.name}</h3>
               <p>${event.cat}</p>
-              <p>We love that guy</p>
+              <p>${event.date}</p>
+              <p>${event.details}</p>
+              <div class="row">
+              <div class="col">
+              <button class="btn btn-primary" data-id="${event.id}">Details</button>
+              </div>
+              </div>
             </div>
           </div>
         </div>
         </div>`
-
-
-
-      //   cols += `
-      //   <div class="flip-card">
-      //   <div class="flip-card-inner">
-      //     <div class="flip-card-front">
-      //       <img src="img/${event.cover}" alt="Avatar" style="width:300px;height:300px;">
-      //     </div>
-      //     <div class="flip-card-back">
-      //       <h1>${event.name}</h1>
-      //       <p>${event.cat}</p>
-      //       <p>We love that guy</p>
-      //     </div>
-      //   </div>
-      // </div>`
-
     });
     workWrapper.innerHTML = cols
     $('[data-toggle="tooltip"]').tooltip()
