@@ -84,3 +84,17 @@ $(document).on('click', '#refreshAdvice', e => {
       $('#quoteContainer').html(`<div><p class="text-monospace font-weight-bold">${d.anime}</p><h5 class="text-monospace font-weight-bold">'${d.quote}'</h5><br><p class="text-monospace">${d.character}</p></div>`)
     })
 })
+
+
+const randomRange = (myMin, myMax) => {
+  return Math.floor(
+    Math.random() * (Math.ceil(myMax) - Math.floor(myMin) + 1) + myMin
+  );
+}
+
+const gifArray = ["gif.gif", "gif1.gif", "gif2.gif", "gif3.gif", "gif4.gif", "gifLofi.gif", "gifLofiJoin.gif", "test3.gif", "test4.gif", "test6.gif", "test7.gif", "test8.gif"]
+
+setInterval(() => {
+  let index = randomRange(0, gifArray.length - 1)
+  $("#home").css('background-image', `url(img/${gifArray[index]})`)
+}, 3000)
