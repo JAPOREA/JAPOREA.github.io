@@ -458,16 +458,15 @@ a:hover {
 
 #preloader:before {
   content: "";
+  background-image: url(/img/loader1.gif);
+  background-size: cover;
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #f2f2f2;
-  border-top: 6px solid black;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
+  width: 250px;
+  height: 250px;
+  /* -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite; */
 }
 
 @-webkit-keyframes animate-preloader {
