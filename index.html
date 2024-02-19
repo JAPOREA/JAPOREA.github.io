@@ -115,7 +115,7 @@
                   <p class="lead">
                     <div class="row text-center">
                       <div class="col">
-                        <button class="im-lofi2">
+                        <button class="im-lofi2" id="registrationButton">
                           <div></div>
                         </button>
                       </div>
@@ -551,6 +551,29 @@
     </div>
   </div>
   <!-- / modal end / -->
+
+
+
+  <div class="modal fade" id="registration" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="regestrationTitle">Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body p-0" id="regestrationBody">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdTh50cbr6gNm16ZrWUDIq5pRsTvb5SxYRubTUnJoFkanOUXw/viewform?embedded=true" id="forms" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>

@@ -1459,6 +1459,13 @@ footer .credits a {
 
 /* cube end */
 
+
+#forms{
+  width: 798px;
+  height: 958px;
+}
+
+
 @media (min-width: 577px) {
   .counter-box {
     margin-bottom: 1.8rem;
@@ -1543,5 +1550,23 @@ footer .credits a {
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
+  }
+  #forms{
+    width: 500px;
+    height: 958px;
+  }
+}
+
+@media (max-width: 992px) {
+  #forms{
+    width: 500px;
+    height: 958px;
+  }
+}
+
+@media (max-width: 577px) {
+  #forms{
+    width: 450px;
+    height: 958px;
   }
 }

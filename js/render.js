@@ -64,6 +64,12 @@ fetch('../gallery/events.json')
 // })
 
 
+// $('#registrationButton')
+
+$(document).on("click","#registrationButton",e=>{
+  $('#registration').modal('show')
+})
+
 
 fetch('https://animechan.xyz/api/random')
   .then(r => { return r.json() })
