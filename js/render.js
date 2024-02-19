@@ -11,18 +11,13 @@ fetch('../gallery/events.json')
           <div class="flip-card w-100">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="img/${event.cover}" alt="Avatar" style="width:100%;height:300px;">
+              <img src="img/gallery/${event.cover}" alt="Avatar" style="width:100%;height:300px;">
             </div>
             <div class="flip-card-back">
               <h3>${event.name}</h3>
               <p>${event.cat}</p>
               <p>${event.date}</p>
               <p>${event.details}</p>
-              <div class="row">
-              <div class="col">
-              <button class="btn btn-primary" data-id="${event.id}">Details</button>
-              </div>
-              </div>
             </div>
           </div>
         </div>
@@ -32,41 +27,41 @@ fetch('../gallery/events.json')
     $('[data-toggle="tooltip"]').tooltip()
   })
 
-$(document).on('click', '.details', e => {
-  console.log('test');
-  let id = $(e.target).data('id')
-  fetch('../portfolio/events.json')
-    .then(r => { return r.json() })
-    .then(d => {
-      let searchedEvent
-      for (let i = 0; i < d.length; i++) {
-        if (d[i].id == id) {
-          searchedEvent = d[i]
-          break
-        }
-      }
-      let links = ''
-      let i = 0
-      searchedEvent.references.forEach(link => {
-        i++
-        links += `<div class="col-sm-3"><a class="text-danger" href="${link}">Link ${i}</a></div>`
-      })
-      $('#eventname').html(searchedEvent.name + ' event details')
-      let card = `<div class="card">
-            <img class="card-img-top" src="img/${searchedEvent.cover}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">${searchedEvent.name}</h5>
-              <p class="card-text">${searchedEvent.details}</p>
-              <h6 class="card-title">References</h6>
-              <div class="row mb-2">${links}</div>
-              <p class="card-text"><small class="text-muted">${searchedEvent.date}</small></p>
-            </div>
-          </div>`
-      $('#eventBody').html(card)
+// $(document).on('click', '.details', e => {
+//   console.log('test');
+//   let id = $(e.target).data('id')
+//   fetch('../portfolio/events.json')
+//     .then(r => { return r.json() })
+//     .then(d => {
+//       let searchedEvent
+//       for (let i = 0; i < d.length; i++) {
+//         if (d[i].id == id) {
+//           searchedEvent = d[i]
+//           break
+//         }
+//       }
+//       let links = ''
+//       let i = 0
+//       searchedEvent.references.forEach(link => {
+//         i++
+//         links += `<div class="col-sm-3"><a class="text-danger" href="${link}">Link ${i}</a></div>`
+//       })
+//       $('#eventname').html(searchedEvent.name + ' event details')
+//       let card = `<div class="card">
+//             <img class="card-img-top" src="img/${searchedEvent.cover}" alt="Card image cap">
+//             <div class="card-body">
+//               <h5 class="card-title">${searchedEvent.name}</h5>
+//               <p class="card-text">${searchedEvent.details}</p>
+//               <h6 class="card-title">References</h6>
+//               <div class="row mb-2">${links}</div>
+//               <p class="card-text"><small class="text-muted">${searchedEvent.date}</small></p>
+//             </div>
+//           </div>`
+//       $('#eventBody').html(card)
 
-      $('#eventDetails').modal('show')
-    })
-})
+//       $('#eventDetails').modal('show')
+//     })
+// })
 
 
 
