@@ -1,15 +1,17 @@
 .im-lofi2 {
-    position: absolute;
+    position: relative;
     left: 0;
     display: block;
-    width: 240px;
-    padding: 40px;
+    width: 165px;
+    height: 4em;
+    /* padding: 40px; */
     margin: 0 auto;
     border: 0;
     cursor: pointer;
     border-radius: 2px;
     box-shadow: 0 10px 20px -5px #94a6af;
     overflow: hidden;
+    margin-right: 10em;
   }
   
  .im-lofi2:before,
@@ -66,6 +68,7 @@
     letter-spacing: 0;
     opacity: 1;
     transform: scale(1);
+    font-size: large;
   }
   
  .im-lofi2 div:after {
@@ -73,6 +76,7 @@
     letter-spacing: -10px;
     transform: scale(0);
     opacity: 0;
+    font-size: large;
   }
   
  .im-lofi2:hover:before {
