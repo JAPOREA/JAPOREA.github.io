@@ -35,9 +35,9 @@ Japorea is a club and community for Asian culture lovers, it's a part of live ro
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [MongoDB](https://www.html.com) - HTML
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
+- [HTML](https://www.html.org) - HTML
+- [CSS](https://expressjs.com/) - Server Framework
+- [JAVASCRIPT](https://vuejs.org/) - Web Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
 ## ✍️ Authors <a name = "authors"></a>
