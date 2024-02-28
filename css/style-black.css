@@ -532,7 +532,7 @@ a:hover {
   bottom: 0;
   left: 0;
   height: 2px;
-  transition: all 500ms ease;
+  transition: all 0.3s ease;
 }
 
 .navbar-b.navbar-trans .nav-link:hover,
@@ -1460,7 +1460,7 @@ footer .credits a {
 /* cube end */
 
 
-#forms{
+#forms {
   width: 798px;
   height: 958px;
 }
@@ -1551,21 +1551,22 @@ footer .credits a {
   .back-to-top {
     bottom: 15px;
   }
-  #forms{
+
+  #forms {
     width: 500px;
     height: 958px;
   }
 }
 
 @media (max-width: 992px) {
-  #forms{
+  #forms {
     width: 500px;
     height: 958px;
   }
 }
 
 @media (max-width: 577px) {
-  #forms{
+  #forms {
     width: 450px;
     height: 958px;
   }
