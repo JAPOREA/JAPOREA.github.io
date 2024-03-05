@@ -8,7 +8,7 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/JAPOREA/JAPOREA.github.io)]()
+[![GitHub Issues](https://img.shields.io/github/issues/JAPOREA/JAPOREA.github.io)](https://github.com/JAPOREA/JAPOREA.github.io/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/JAPOREA/JAPOREA.github.io)](https://github.com/JAPOREA/JAPOREA.github.io/pulls)
 
 </div>
