@@ -1,8 +1,8 @@
-/* body {
-    background-image: url(../img/téléchargement.gif);
-    background-repeat: no-repeat;
+body {
+    background-image: url(../img/ras1.gif);
+    /* background-repeat: no-repeat; */
     background-size: cover;
-} */
+}
 
 .blog-mf {
     height: 100vh;
